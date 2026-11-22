@@ -1,0 +1,17 @@
+import random
+
+liste = [] #создаём коробку, в которую положим 5 рандомных числа
+for _ in range(5):
+    random_num = random.randint(1,10)
+    liste.append(random_num)
+
+print(f"Список с рандомными числами: {liste}") #выводим на экран список 5-ти чисел
+
+min_num = min(liste) #находим минимальный элемент в списке
+print(f"Минимальное число списка: {min(liste)}")
+
+index_min_num = liste.index(min_num) #находим ИНДЕКС этого мин. элемента
+print(f"Индекс мин. числа: {index_min_num}")
+
+liste[0], liste[index_min_num] = liste[index_min_num], liste[0] #меняем местами мин. число и первое число в списке
+print(f"Итоговый список: {liste}")
