@@ -1,0 +1,20 @@
+import random
+
+count_marks = int(input("Введите кол-во оценок: "))
+
+marks = [] #коробка, в которую будем помещать оценки
+count_fives = 0 #счётчик кол-ва пятёрок
+count_twos = 0 #счётчик кол-ва двоек☺
+
+for i in range(count_marks):
+    mark = random.randint(2,5) #создаём рандомные оценки
+    marks.append(mark)
+
+for j in marks:
+    if j == 5: count_fives+=1 #если в списке есть 5, добавляем 1 в счётчик (для кол-ва)
+
+    if j == 2: count_twos+=1 #аналогично
+
+print(f"Все оценки: {marks}")
+print(f"Количество пятёрок: {count_fives}")
+print(f"Количество двоек: {count_twos}")
