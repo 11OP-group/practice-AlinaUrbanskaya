@@ -1,0 +1,14 @@
+numbers = [10, 20, 30, 40, 50]
+num = int(input("Введите число: "))
+
+f = False #любимый флажок
+
+for i in range(len(numbers)):
+    if numbers[i] == num: #если введённое число есть в списке
+        print(f"Индекс числа {num} равен {i}")
+        f = True #меняем значение флага на False, чтобы не сработал if на 11 строке
+        print(f"Список: {numbers}")
+        break
+if not f:
+    print("Нет такого числа")
+    print(f"Список: {numbers}")
