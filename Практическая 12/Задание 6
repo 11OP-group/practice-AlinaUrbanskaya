@@ -1,0 +1,9 @@
+word = input("Введите слово: ")
+
+stroka = list(word) #разбиваем слово на символы
+stroka_copy = stroka[::-1] #переворачиваем скопированное слово, введённое пользователем
+
+if stroka == stroka_copy:
+    print("Палиндром")
+else:
+    print("Не палиндром")
