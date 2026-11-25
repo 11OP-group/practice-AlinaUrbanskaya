@@ -1,0 +1,7 @@
+n = int(input("Введите кол-во строк: "))
+letters = []
+for n in range(n):
+    words = input("Введите что-нибудь в строку: ")
+    letters += list(words)
+
+print(f"Список, состоящий из символов всех введенных строк: {letters}")
