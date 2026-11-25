@@ -1,9 +1,0 @@
-shopping_list = ["молоко","свёкла","картофель","хлеб"]
-shopping_list.append("булочка")
-print(shopping_list)
-
-unique_items = set(shopping_list)
-print(unique_items)
-
-#Отличается. Множетсво раскидал элементы не так, как
-#было в списке
