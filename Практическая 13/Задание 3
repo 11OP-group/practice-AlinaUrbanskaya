@@ -1,0 +1,3 @@
+win = input("Введите полное имя файла: ").split("\\")
+
+print(*win, sep="\n")
