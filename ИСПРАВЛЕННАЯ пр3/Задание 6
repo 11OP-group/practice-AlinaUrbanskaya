@@ -1,0 +1,19 @@
+name = input("Ваше имя: ")
+age = int(input("Ваш возраст: "))
+subjects = input("Любимые предметы (через запятую): ")
+
+student = {
+    "username":name,
+    "age":age,
+    "fav_subj":subjects
+}
+
+print("="*30)
+print("АНКЕТА СТУДЕНТА")
+print("="*30)
+
+print(f"Имя: {student['username']}")
+print(f"Возраст: {student['age']}")
+print(f"Любимые предметы: {student['fav_subj']}")
+
+print("="*30)
