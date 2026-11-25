@@ -1,0 +1,19 @@
+numbers = [8, 9, 10, 11]
+print(f"Изначальный список: {numbers}")
+
+numbers[1] = 17
+print(f"Заменил второй элемент списка на 17: {numbers}")
+
+numbers.extend([4,5,6])
+print(f"Добавил числа 4,5,6 в конец списка: {numbers}")
+
+del numbers[0]
+print(f"Удалил первый элемент списка: {numbers}")
+
+numbers += numbers
+print(f"Удвоил список: {numbers}")
+
+numbers.insert(3,25)
+print(f"Вставил число 25 по индексу 3: {numbers}")
+
+print(f"Итоговый список:: {numbers}")
